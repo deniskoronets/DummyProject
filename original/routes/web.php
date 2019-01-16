@@ -1,7 +1,10 @@
 <?php
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'WebsitesController@index');
 
-Route::get('');
+Route::get('analytics/ip', 'AnalyticsController@ipReport');
+Route::get('analytics/country', 'AnalyticsController@countryReport');
+Route::get('analytics/website', 'AnalyticsController@websiteReport');
+
+
+
