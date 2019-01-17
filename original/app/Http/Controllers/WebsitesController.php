@@ -13,4 +13,14 @@ class WebsitesController extends Controller
             'websites' => Website::all(),
         ]);
     }
+
+    public function remove($id, Request $request)
+    {
+        //
+    }
+
+    public function show($id)
+    {
+        //
+    }
 }
