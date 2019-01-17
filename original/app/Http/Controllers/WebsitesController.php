@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Website;
+use App\Models\Eloquent\Website;
 use Illuminate\Http\Request;
 
 class WebsitesController extends Controller
@@ -12,15 +12,5 @@ class WebsitesController extends Controller
         return view('websites.index', [
             'websites' => Website::all(),
         ]);
-    }
-
-    public function remove($id, Request $request)
-    {
-        //
-    }
-
-    public function show($id)
-    {
-        //
     }
 }
